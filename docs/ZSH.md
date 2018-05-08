@@ -36,34 +36,7 @@ export LESS='-g -i -M -R -S -w -z-4'
   export LESSOPEN='| /usr/bin/env lesspipe %s 2>&-'
 
 
-unsetopt GLOBAL_RCS  # disable global zsh config; we'll handle it ourselves
-
-  zgen load zsh-users/zsh-history-substring-search
-  zgen load zsh-users/zsh-completions src
-  zplug "zsh-users/zsh-syntax-highlighting"
-zplugin light zsh-users/zsh-autosuggestions
- zgen load hlissner/zsh-autopair autopair.zsh develop
-3:zplug "jimeh/zsh-peco-history"
-  zgen load zdharma/history-search-multi-word
-
-
   zgen load junegunn/fzf shell  # completions
-    zgen load zdharma/fast-syntax-highlighting
-
-85:    zplug "plugins/encode64", from:oh-my-zsh
-
-1:zplug 'sorin-ionescu/prezto', from:github, use:'modules/history/*.zsh'
-6:    zplug 'sorin-ionescu/prezto', from:github, use:'modules/git/*.zsh'
-3:    zplug "plugins/sudo", from:oh-my-zsh
-
-
-zmap
-zsh-navigation-tools
-zshdb
-zsh-syntax-highlighting
-zssh
-zsync
-zpython
 
 :  prompt_opts=(cr percent sp subst)
 
